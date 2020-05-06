@@ -53,7 +53,7 @@ latent_ranges = [(lower_limit,upper_limit) for x in latent_params]
 #latent_ranges[2] = (.20, .84)  # Change Single Param
 
 # Load decoder weights
-weights_path = '/Users/yigitatay/Desktop/FONT_GENERATOR/allDataDecoder.h5'
+weights_path = '/Users/yigitatay/Desktop/FontGenerator/allDataDecoder.h5'
 
 class Ui_MainWindow(object):
     latent_param_labels = [x for x in latent_params.keys()]
@@ -101,7 +101,7 @@ class Ui_MainWindow(object):
     def generateImage(self):
         latent_space = list(latent_params.values())
         latent_space = np.reshape(latent_space, [1, 100])
-        eneration = self.model.predict(latent_space)
+        generation = self.model.predict(latent_space)
         #print(generation.shape)
         generation = self.model.predict(latent_space)
         generation = np.reshape(generation, [512, 512])
