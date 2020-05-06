@@ -53,7 +53,7 @@ latent_ranges = [(lower_limit,upper_limit) for x in latent_params]
 #latent_ranges[2] = (.20, .84)  # Change Single Param
 
 # Load decoder weights
-weights_path = '/Users/yigitatay/Desktop/FontGenerator/allDataDecoder.h5'
+weights_path = 'allDataDecoder.h5'
 
 class Ui_MainWindow(object):
     latent_param_labels = [x for x in latent_params.keys()]
