@@ -16,4 +16,5 @@ Once the dataset is created, removing the dingbats is recommended for better tra
 
 To train the model, the scripts are in the FONTS_VAE notebook. However, since the dataset is too large, I cannot upload it on Github.
 Therefore, the dataset need to be created first to train the model.
+If you need the training dataset, let me know and I can share it through Drive.
 
